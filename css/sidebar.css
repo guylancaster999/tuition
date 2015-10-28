@@ -1,0 +1,259 @@
+body
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13pt
+}
+h1
+{
+	padding-top:0;
+	margin-top:0;
+	margin-bottom:0;
+	padding-bottom:0;
+	text-align: center;
+	font-weight:600;
+	font-size:22pt;
+}
+h1 a
+{
+	font-weight:400;
+	text-align: center;
+	font-size:22pt;
+	color:#000;
+	text-decoration:none;
+}
+h2
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18pt;
+	font-weight:500;
+	padding-top:4px;
+	margin-top:6px;
+	margin-bottom:6px;
+	padding-bottom:6px;
+	text-align: center;	
+}
+td,th
+{ 
+	vertical-align:top;
+}
+ 
+#wrapper 
+{
+    padding-left: 0;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+#wrapper.toggled {
+    padding-left:148px;
+}
+#sidebar-wrapper 
+{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color:#fff;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    height: 100%;
+    left: 148px;
+    margin-left: -148px;
+    margin-top: 0px;
+    overflow-y: auto;
+    position: fixed;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease;
+    width: 0;
+    z-index: 1000;
+}
+#wrapper.toggled #sidebar-wrapper 
+{
+    width: 148px;
+}
+#page-content-wrapper 
+{
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    margin-top:0;
+    position: absolute;
+    width: 100%;
+	top:0;
+}
+#wrapper.toggled #page-content-wrapper 
+{
+    margin-right: -148px;
+    position: absolute;
+}
+.logo 
+{
+ 	position:absolute;
+	top:6px;
+	left:8px;
+}
+.sidebar-nav 
+{
+ 	position:absolute;
+ 	top:130px;
+ 	list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 4px;
+    padding-bottom: 0;
+    padding-left: 4px;
+    padding-right: 0;
+    padding-top: 0;
+    text-decoration-line: none;
+}
+.sidebar-nav li 
+{
+    text-indent: 2px;
+	background-color:#0CF;
+	line-height:24px;
+    width:120px;
+	border-radius: 8px;
+    border: 2px solid  #CCC;
+	box-shadow: 3px 3px 3px 3px;
+    background-color:#09C;
+	padding:4px;
+	margin:10px;
+}
+.sidebar-nav li a {
+    color: #fff;
+  	font-size:14pt;
+	text-decoration:none;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+.sidebar-nav li a:hover {
+	text-decoration:underline;
+}
+.sidebar-nav li a:active, .sidebar-nav li a:focus 
+{
+    text-decoration-color: -moz-use-text-color;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+ 
+.sidebar-nav > .sidebar-brand a:hover
+ {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    color: #fff;
+}
+@media (min-width: 768px) {
+	#wrapper {
+  	  padding-left: 148px;
+	  	margin-top:0;
+		padding-top:0;
+	}
+#wrapper.toggled 
+{
+	margin-top:0;
+	padding-top:0;
+	padding-left: 0;
+}
+#sidebar-wrapper 
+{
+	margin-top:0;
+	padding-top:0;
+	width: 148px;
+}
+#wrapper.toggled #sidebar-wrapper
+{
+	margin-top:0;
+    padding-top:0;
+    width: 0;	
+	margin-top:0;
+}
+#page-content-wrapper {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+    position: relative;
+}
+#wrapper.toggled #page-content-wrapper {
+    margin-right: 0;
+    position: relative;
+	margin-top:0;
+	padding-top:0;
+}
+}
+.year
+{border-radius:2px;
+border:1px solid;
+border-color:#666;
+padding-left:400px;
+padding-bottom:4px;
+margin-top:10px;
+margin-bottom:10px;
+border-width:2px;
+font-weight:600;
+width:100%;
+font-family:Verdana, Geneva, sans-serif;
+font-size:16pt;}
+.brclear
+{clear:both;}
+.ulsquare
+{list-style:square;}
+.smallprint
+{font-size:9pt;
+padding-top:6px;
+padding-right:6px;}
+.error
+{color:#F00;
+text-align:center;
+font-weight:600;}
+.gr  
+{color:#CCC}
+.tbl
+{padding:6px;
+}
+.alpha
+{font-size:10pt;
+font-weight:700;
+text-align:center}
+.pic
+{padding-right:14px;
+padding-left:14px; }
+.piccenter
+{
+padding-left:10px;
+width:90%;
+float:center;
+}
+.pictureright
+{
+	padding-left:6px;
+	width:45%;
+	float:right;
+}
+.top
+{
+	position:absolute;
+	left:50%;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.toggle-pos
+{
+	position:absolute;
+	right:5px;
+	top:4px;
+}
